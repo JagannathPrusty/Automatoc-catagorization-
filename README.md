@@ -1,28 +1,35 @@
-🧠 Automatic Categorization of Software Requirements into Quality Attributes
+#📌 Project Title
 
-This project implements machine learning-based classification of software requirements into quality attributes such as Performance, Usability, Security, Reliability, and others.
-It uses TF-IDF vectorization and multiple ML classifiers like SVM, Decision Tree, and Random Forest to automatically categorize requirement statements.
-🎯 Objective
+Agentic AI Based Personal Loan Sales Chatbot – Tata Capital (BFSI Challenge)
 
-To classify software requirement statements into different quality attributes such as:
+#📖 Overview
 
-Performance
+This project introduces an AI-powered web chatbot that simulates a human sales executive for Tata Capital. It helps customers apply for personal loans through a conversational journey — from requirement gathering to instant sanction letter generation.
 
-Usability
+The system uses an Agentic AI architecture where:
 
-Reliability
+A Master Agent manages the conversation
 
-Security
+Multiple Worker Agents handle key tasks like KYC verification, credit check, underwriting, and sanction letter creation
 
-Maintainability
+#🎯 Objective
 
-Availability
-🗂️ Dataset
+To improve loan conversion rates and reduce manual processing time by automating the end-to-end personal loan approval process.
 
-Dataset Used: PURE Dataset (or manually labeled NFR dataset)
+#💡 Key Features
 
-Description: Contains requirement statements labeled with quality attributes.
+✅ Smart conversational UI for customer engagement
 
-Format: CSV file with columns like:
+✅ Instant KYC verification using dummy CRM data
 
-Type, Requirement
+✅ Credit score checking through mock API
+
+✅ Underwriting based on approval rules
+
+✅ PDF sanction letter generation
+
+✅ End-to-end automation without human intervention
+
+✅ 24×7 availability and scalable for future upgrades
+
+#🧩 Architecture
