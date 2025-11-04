@@ -1,35 +1,48 @@
-#📌 Project Title
+###🧠 Software Requirement Classification
 
-Agentic AI Based Personal Loan Sales Chatbot – Tata Capital (BFSI Challenge)
+This project classifies software requirement statements into different quality attributes (like Performance, Usability, Security, etc.) using Machine Learning.
 
-#📖 Overview
+##🎯 Objective
 
-This project introduces an AI-powered web chatbot that simulates a human sales executive for Tata Capital. It helps customers apply for personal loans through a conversational journey — from requirement gathering to instant sanction letter generation.
+To automatically categorize software requirement text using ML models trained on labeled datasets such as the PURE Dataset.
 
-The system uses an Agentic AI architecture where:
+##🧰 Technologies Used
 
-A Master Agent manages the conversation
+Python 3.x
 
-Multiple Worker Agents handle key tasks like KYC verification, credit check, underwriting, and sanction letter creation
+Pandas, NumPy
 
-#🎯 Objective
+NLTK – for text preprocessing
 
-To improve loan conversion rates and reduce manual processing time by automating the end-to-end personal loan approval process.
+Scikit-learn – for TF-IDF and ML models
 
-#💡 Key Features
+Matplotlib / Seaborn – for visualization
 
-✅ Smart conversational UI for customer engagement
+##⚙️ Steps to Run
 
-✅ Instant KYC verification using dummy CRM data
+Clone this repository
 
-✅ Credit score checking through mock API
+git clone https://github.com/<your-username>/software-requirement-classifier.git
+cd software-requirement-classifier
 
-✅ Underwriting based on approval rules
 
-✅ PDF sanction letter generation
+Install dependencies
 
-✅ End-to-end automation without human intervention
+pip install -r requirements.txt
 
-✅ 24×7 availability and scalable for future upgrades
 
-#🧩 Architecture
+Run the model
+
+python model_training.py
+
+
+Test with new input
+
+test_text = ["The system must be easy to navigate."]
+test_tfidf = vectorizer.transform(test_text)
+prediction = models["Random Forest"].predict(test_tfidf)
+print("Predicted Category:", prediction[0])
+
+##📊 Output Example
+Accuracy: 0.75
+Predicted Category: Usability
