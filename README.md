@@ -1,48 +1,53 @@
-###🧠 Software Requirement Classification
+# 🧠 Software Requirement Classification using Machine Learning
 
-This project classifies software requirement statements into different quality attributes (like Performance, Usability, Security, etc.) using Machine Learning.
+This project focuses on classifying software requirement statements into specific quality attributes such as **Performance**, **Usability**, **Reliability**, **Security**, etc., using **Natural Language Processing (NLP)** and **Machine Learning** techniques.
 
-##🎯 Objective
+---
 
-To automatically categorize software requirement text using ML models trained on labeled datasets such as the PURE Dataset.
+## 🎯 Objective
 
-##🧰 Technologies Used
+The main goal of this project is to build a classification model that can automatically analyze and categorize software requirements, helping teams improve requirement management and traceability in software engineering.
 
-Python 3.x
+---
 
-Pandas, NumPy
+## 🧰 Technologies Used
 
-NLTK – for text preprocessing
+- **Programming Language:** Python 3.x  
+- **Libraries & Frameworks:**
+  - Pandas  
+  - NumPy  
+  - NLTK  
+  - Scikit-learn  
+  - Matplotlib / Seaborn  
 
-Scikit-learn – for TF-IDF and ML models
+---
 
-Matplotlib / Seaborn – for visualization
+## 🧠 Methodology
 
-##⚙️ Steps to Run
+1. **Data Collection** – Software requirement dataset (e.g., PURE Dataset).  
+2. **Text Preprocessing** – Cleaning, tokenization, stopword removal, and vectorization using **TF-IDF**.  
+3. **Model Training** – Applying ML algorithms such as:
+   - Random Forest  
+   - Logistic Regression  
+   - Support Vector Machine (SVM)  
+4. **Model Evaluation** – Using **Confusion Matrix** and **Accuracy Score** for performance analysis.  
+5. **Visualization** – Displaying accuracy and confusion matrix for each classifier.  
+6. **Testing** – Predicting category for new input requirement statements.  
 
-Clone this repository
+---
 
-git clone https://github.com/<your-username>/software-requirement-classifier.git
-cd software-requirement-classifier
+## ⚙️ System Requirements
 
+- **Python:** 3.8 or above  
+- **OS:** Windows / macOS / Linux  
+- **IDE:** VS Code / Jupyter Notebook / PyCharm  
+- **Dependencies:** Listed in `requirements.txt`
 
-Install dependencies
+---
 
-pip install -r requirements.txt
+## 🚀 Steps to Execute
 
-
-Run the model
-
-python model_training.py
-
-
-Test with new input
-
-test_text = ["The system must be easy to navigate."]
-test_tfidf = vectorizer.transform(test_text)
-prediction = models["Random Forest"].predict(test_tfidf)
-print("Predicted Category:", prediction[0])
-
-##📊 Output Example
-Accuracy: 0.75
-Predicted Category: Usability
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<your-username>/software-requirement-classification.git
+   cd software-requirement-classification
