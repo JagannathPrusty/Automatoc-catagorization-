@@ -1,2 +1,2 @@
 # Automatoc-catagorization-
-Automatoc catagorization of software requirements into quality attributes
+Automatic catagorization of software requirements into quality attributes
